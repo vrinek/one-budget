@@ -1,10 +1,11 @@
 module.exports = {
-  entry: './main.js',
+  entry: './src/main.js',
   output: {
-    path: './',
+    path: './public/',
     filename: 'index.js'
   },
   devServer: {
+    contentBase: './public/',
     host: '0.0.0.0',
     inline: true,
     port: 3333
