@@ -7,8 +7,10 @@ module.exports = {
   devServer: {
     contentBase: './public/',
     host: '0.0.0.0',
-    inline: true,
-    port: 3333
+    port: 3333,
+    watchOptions: {
+      poll: true
+    }
   },
   module: {
     loaders: [
